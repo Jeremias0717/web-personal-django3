@@ -1,0 +1,29 @@
+{% extends "core/base.html" %}
+{% block title %}Acerca de {% endblock %}
+{% block background %}{% load static %}{% static 'core\img\about-bg.jpg' %}{% endblock %}
+
+{% block headers %}
+    <h1>Acerca de</h1>
+    <span class="subheading">Biografía</span>
+{% endblock %}
+
+{% block content %}
+<!-- Contenido Principal -->
+<div class="container">
+    <div class="row">   
+      <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid avatar" src=" {% static 'core\img/avatar.jpg' %}" alt="">
+      </div>
+      <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading">Jeremy Valencia</h2>   
+        <p>La princesa está aburrida y no sabe qué hacer. Finalmente, decide ponerse a tejer. Compra unas agujas, mucha.</p>
+        <p>lana, dos gatos y ¡manos a la obra! Es así como esta inquieta princesa abriga con su bufanda a todo el reino... y,...
+            {% lorem 1 b random %}
+        </p>
+      </div>
+    </div>  
+  </div>
+
+  <hr>
+{% endblock %}
+

@@ -1,0 +1,14 @@
+{% extends "core/base.html" %}
+{% block title %}Contacto {% endblock %}
+{% block background %}{% load static %}{% static 'core\img\contact-bg.jpg' %}{% endblock %}
+
+{% block headers %}
+    <h1>Contacto</h1>
+    <span class="subheading">Asesoría</span>
+{% endblock %}
+{% block content %}
+    <H2>Contacto</h2>
+    <p>Escribe a nuestro grupo de desarrollo: <a href="mailto:jvalencia0450@utm.edu.ec">jvalencia0450@utm.edu.ec</a></p>
+    <p>{% lorem 1 b random %}</p>
+{% endblock %}
+
